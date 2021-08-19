@@ -28,7 +28,7 @@ variable "key" {
    type = string
    default = "test"
 }
-variable "count" {
+variable "instance-count" {
    description = "The list of S3 folders to create"
    default     = ""
 }
