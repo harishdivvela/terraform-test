@@ -28,8 +28,7 @@ variable "key" {
    type = string
    default = "test"
 }
-#variable "s3_folders" {
-#   type        = list
-#   description = "The list of S3 folders to create"
-#   default     = "s3-folders"
-#}
+variable "count" {
+   description = "The list of S3 folders to create"
+   default     = ""
+}
