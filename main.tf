@@ -33,7 +33,7 @@ resource "aws_s3_bucket_object" "folder" {
  }
   
 resource "aws_instance" "server" {
-  count = var.instance-count 
+  count = "${var.instance-count}" 
   ami           = var.ami
   instance_type = var.int_type
  # subnet_id     = "subnet-08bc8bc52fdf01323"
@@ -49,7 +49,7 @@ aws s3 sync /opt/jmeter/bin/ s3://my-bucket-03-08-2022/"${var.key}/"
 chmod 777 infra-destroy.sh
 #sed -i 's/s3-folder/"${var.key}/g" /opt/terraform/bin/s3-script.sh
 sleep 2m
-./infra-destroy.sh
+#./infra-destroy.sh
 EOF
 	
   tags = {
