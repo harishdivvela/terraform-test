@@ -30,5 +30,5 @@ variable "key" {
 }
 variable "instance-count" {
    description = "The list of S3 folders to create"
-   default     = ""
+   default     = "keyvar"
 }
