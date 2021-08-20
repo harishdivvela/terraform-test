@@ -30,5 +30,5 @@ variable "key" {
 }
 variable "instancecount" {
    type = string
-   default     = "usercount"
+   default     = "answer"
 }
