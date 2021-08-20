@@ -33,7 +33,8 @@ resource "aws_s3_bucket_object" "folder" {
  }
   
 resource "aws_instance" "servers" {
-  count = "${var.instancecount}" 
+#  count = "${var.instancecount}"
+  count =1	
   ami           = var.ami
   instance_type = var.int_type
  # subnet_id     = "subnet-08bc8bc52fdf01323"
