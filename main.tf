@@ -32,7 +32,7 @@ resource "aws_s3_bucket_object" "folder" {
   source = "/dev/null" 
  }
   
-resource "aws_instance" "server" {
+resource "aws_instance" "servers" {
   count = "${var.instancecount}" 
   ami           = var.ami
   instance_type = var.int_type
