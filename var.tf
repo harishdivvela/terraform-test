@@ -9,7 +9,7 @@ variable "ami" {
 
 variable "int_type" {
   type = string
-  default = "t2.xlarge"
+  default = "t2.large"
 }
 
 #variable "subnet" {
